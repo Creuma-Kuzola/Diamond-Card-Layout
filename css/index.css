@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgba(231, 231, 231, 0.247);
+}
+
+.diamond-card{
+    display: grid;
+    grid-template-columns:repeat(1fr,3);
+    grid-template-rows: repeat(1fr,2);
+    gap:0 5vh ;
+    width: 60vw;
+    height: 70vh;
+}
+
+.box{
+    width: 20vw;
+    height:25vh ;
+    border-radius: 0.3vw;
+    background-color: #fff;
+}
+
+.left-card{
+
+    border: 0.5vh solid hotpink;
+    grid-column: 1/2;
+    grid-row: 2/3;
+    transform: translateY(-20vh);
+}
+
+.top-card{
+    border: 0.5vh solid rgb(190, 190, 31);
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.bottom-card{
+    grid-column: 2/3;
+    grid-row: 2/3;
+    transform: translateY(-5vh);
+    border: 0.5vh solid rgb(252, 134, 0);
+}
+
+.right-card{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    transform: translateY(-20vh);
+    border: 0.5vh solid rgb(0, 118, 252);
+}
+
+.p-title{
+    padding-left:3vh;
+    padding-top: 3vh;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family:sans-serif;
+}
+
+.p-text{
+    padding:2vh;
+    padding-top: 3vh;
+    padding-left:3vh;
+    font-size: 0.8rem;
+    font-family:sans-serif;
+    text-align: justify;
+}
+
+.span-color{
+
+    width: 2vw;
+    height: 3.5vh;
+    background-color: black;
+    margin-top: 2vh;
+    margin-left:36vh;
+    border-radius: 0.4vh;
+}
+
+.color-left-card{
+
+    background-color: hotpink;;
+}
+
+.color-top-card{
+
+    background-color:rgb(190, 190, 31);
+}
+
+.color-bottom-card{
+
+    background-color: rgb(252, 134, 0);
+}
+
+.color-right-card{
+
+    background-color: rgb(0, 118, 252);
+}
